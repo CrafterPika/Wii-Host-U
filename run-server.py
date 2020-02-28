@@ -17,5 +17,5 @@ class Serv(BaseHTTPRequestHandler):
         self.wfile.write(bytes(file_to_open, 'utf-8'))
 
 #replace the "localhost" with your iPv4
-httpd = HTTPServer(('localhost', 8080), Serv)
+httpd = HTTPServer(('localhost', 8000), Serv)
 httpd.serve_forever()
