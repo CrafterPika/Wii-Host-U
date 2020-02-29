@@ -3,8 +3,10 @@ A WiiU exploit self hosting package (works with 5.5.x)
 <br>
 <br>
 Proof of Concept:
-https://www.youtube.com/embed/vxgh_i4xZiw
+<br>
+https://youtu.be/vxgh_i4xZiw
 <br>
 <br>
 Download+Intructions:
+<br>
 <a href="https://github.com/CrafterPika/Wii-Host-U/releases">Here</a>
