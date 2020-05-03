@@ -1,6 +1,9 @@
 <b>[discontinued] No longer useful....</b>  use [LyfeOnEdge's](https://github.com/LyfeOnEdge/appstore-workbench) tool instead
 
-Original README:
+
+
+
+## Original README:
 
 # Wii-Host-U
 A Simple & User friendly selfhosting tool.
@@ -25,7 +28,7 @@ MacOS & Linux:
 <b>Enjoy</b>
 
 Android:
-1. Download <code>wii_host_u_v1.2_android.zip</code> & <code>sdfiles.zip</code>
+1. Download <code>wii_host_u_v1.2_android.zip</code>
 2. install the <code>.apk</code> from the <code>.zip</code>
 3. just put the files in your main storage "/storage/emulated/0/www" and enter this as your kWS home directory (.../settings/home directory/) then exit out of settings and press start Server
 4. open <code>http://[your_ipv4_adress]:8080</code> in your wiiu webbrowser
