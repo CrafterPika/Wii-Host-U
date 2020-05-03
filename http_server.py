@@ -5,7 +5,7 @@ ip_adress = input("Please enter your IP address: ")
 class Serv(BaseHTTPRequestHandler):
 
     def do_GET(self):
-        if self.path == '/www/':
+        if self.path == '/':
             self.path = '/www/index.html'
         try:
             file_to_open = open(self.path[1:]).read()
