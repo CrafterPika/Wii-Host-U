@@ -1,12 +1,12 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-print("Server is Running :)")
+ip_adress = input("Please enter your IP address: ")
 
 class Serv(BaseHTTPRequestHandler):
 
     def do_GET(self):
-        if self.path == '/':
-            self.path = '/index.html'
+        if self.path == '/www/':
+            self.path = '/www/index.html'
         try:
             file_to_open = open(self.path[1:]).read()
             self.send_response(200)
@@ -16,6 +16,6 @@ class Serv(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(bytes(file_to_open, 'utf-8'))
 
-#replace the "localhost" with your iPv4
-httpd = HTTPServer(('localhost', 8000), Serv)
+print("Server is running at port 8080")
+httpd = HTTPServer((ip_adress, 8080), Serv)
 httpd.serve_forever()
