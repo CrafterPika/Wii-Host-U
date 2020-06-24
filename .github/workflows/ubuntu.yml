@@ -21,7 +21,7 @@ jobs:
       run:
           pip install -r depends.txt
 
-    - name: install depency's 
+    - name: build ubuntu
       run:
           pyinstaller --onefile http_server.py
         
@@ -29,4 +29,4 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: buildroot_ubuntu
-        path: http_server
+        path: ./Wii-Host-U/dist/http_server
