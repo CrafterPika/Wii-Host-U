@@ -1,0 +1,32 @@
+name: buildroot
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+
+    - name: install depency's 
+      run:
+          pip install -r depends.txt
+
+    - name: install depency's 
+      run:
+          pyinstaller --onefile http_server.py
+        
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: buildroot_macos
+        path: http_server
